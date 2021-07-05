@@ -6,7 +6,7 @@
 - Links: [Vk](https://vk.com/honestliar)  [Telegram](https://t.me/Maksim_hl)
 
 ## Summary
-An ACS engineer who diceded profession for developer. 
+An ACS engineer who diceded to change his profession for developer. 
 
 Highly motiveted, ambitious, hard-working, team player.
 
@@ -14,7 +14,7 @@ Highly motiveted, ambitious, hard-working, team player.
 HTML5, CSS3, JS, PHP. 
 
 ## Experience
-Made a personal website on freelance: https://digitalteacher.online/
+Created a personal website on freelance: https://digitalteacher.online/
 ## Education 
 Volgograd State Techical University 
 
