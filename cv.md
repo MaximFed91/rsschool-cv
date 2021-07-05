@@ -14,7 +14,7 @@ Highly motiveted, ambitious, hard-working, team player.
 HTML5, CSS3, JS, PHP. 
 
 ## Experience
-Created a personal website on freelance: https://digitalteacher.online/
+Created a personal website on freelance: [digitalteacher.online](https://digitalteacher.online)
 ## Education 
 Volgograd State Techical University 
 
