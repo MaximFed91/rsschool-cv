@@ -8,7 +8,7 @@
 ## Summary
 An ACS engineer who diceded to change his profession for developer. 
 
-Highly motiveted, ambitious, hard-working, team player.
+Highly motivated, ambitious, hard-working, team player.
 
 ## Skills 
 HTML5, CSS3, JS, PHP. 
