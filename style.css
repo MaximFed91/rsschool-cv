@@ -26,10 +26,11 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     position: relative;
+    padding: 0 20px;
 }
 
 .position {
@@ -40,11 +41,9 @@ body {
 
 .aside {
     background-color: #363638;
-    width: 400px;
 }
 
 .main {
-    width: 800px;
     background-color: #f9f9f9;
 }
 
@@ -191,4 +190,23 @@ body {
 
 .footer__link {
     margin-left: 100px;
+}
+
+@media(max-width:1240px) {
+    .container {
+        
+        padding: 0 12px;
+    }
+    .black-container {
+       
+        padding: 0 50px 0 45px;
+    }
+    .white-container {
+        
+        padding: 0 45px 0 45px;
+    }
+}
+
+@media(max-width:1023px){
+
 }
