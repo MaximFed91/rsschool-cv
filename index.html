@@ -10,25 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <div class="black-container">
+            <class class="header__inner">
+                <div class="header__img black-container">
                     <img class="img" src="photo.jpg" alt="Maksim Fedorov">
                 </div>
-                <div class="white-container">
+                <div class="header__text white-container">
                     <h1 class="name__title">MAKSIM FEDOROV</h1>
                     <p class="name__prof">FRONTEND DEVELOPER</p>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__text" href="#summary">SUMMARY</a></li>
+                            <li class="menu__item"><a class="menu__text" href="#strength">KEY STRENGTH</a></li>
+                            <li class="menu__item"><a class="menu__text" href="#experience">EXPERIENCE</a></li>
+                            <li class="menu__item"><a class="menu__text" href="#mycode">EXAMPLE OF MY CODE</a></li>
+                            <li class="menu__item"><a class="menu__text" href="#education">EDUCATION</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
+            </class>
         </div>
     </header>
     <main>
-        <section>
-            <div class="container">
+        <div class="container">
+            <aside class="aside position">
                 <div class="black-container">
                     <div class="block-contacts">
                         <h3 class="block__title">
@@ -43,30 +55,12 @@
                                     href="mailto:honestliar91@gmail.com">honestliar91@gmail.com</a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="https://vk.com/honestliar">VK</a> <a
-                                    class="contacts__link " href="https://t.me/Maksim_hl">Telegram</a>
+                                <a class="contacts__link" href="https://vk.com/honestliar">VK</a> 
+                                 <a class="contacts__link" href="https://t.me/Maksim_hl">Telegram</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="white-container">
-                    <div class="block-summary">
-                        <h3 class="block__title">
-                            SUMMARY
-                        </h3>
-                        <p class="block__text">
-                            An ACS engineer who diceded to change his profession for developer.
-                        </p>
-                        <p class="block__text">
-
-                            Highly motiveted, ambitious, hard-working, team player.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
                 <div class="black-container">
                     <div class="block-skills">
                         <h3 class="block__title">
@@ -80,21 +74,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="white-container">
-                    <div class="block-experience">
-                        <h3 class="block__title">
-                            EXPERIENCE
-                        </h3>
-                        <p class="block__text">
-                            Created a personal website on freelance: <a href="https://digitalteacher.online"
-                                class="experience__link"> digitalteacher.online</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
                 <div class="black-container">
                     <div class="block-english">
                         <h3 class="block__title">
@@ -105,36 +84,163 @@
                         </p>
                     </div>
                 </div>
+            </aside>
+            <div class="main position">
                 <div class="white-container">
-                    <div class="block-education">
+                    <section class="block-summary" id="summary">
+                        <h3 class="block__title">
+                            SUMMARY
+                        </h3>
+                        <p class="block__text">
+                            An ACS engineer who decided to change his profession for developer.
+                        </p>
+                    </section>
+                </div>
+                <div class="white-container">
+                    <section class="block__strengths" id="strength">
+                        <h3 class="block__title">
+                            KEY STRENGTH
+                        </h3>
+                        <ul class="strengths__list">
+                            <li class="strengths__item">Highly motivated</li>
+                            <li class="strengths__item">Ambitious</li>
+                            <li class="strengths__item">Hardworking</li>
+                            <li class="strengths__item">Responsible</li>
+                            <li class="strengths__item">Sociable</li>
+                            <li class="strengths__item">Conscientious</li>
+                            <li class="strengths__item">Quick learner</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="white-container">
+                    <section class="block-experience" id="experience">
+                        <h3 class="block__title">
+                            EXPERIENCE
+                        </h3>
+                        <p class="block__text">
+                            Created a personal website on freelance: <a href="https://digitalteacher.online"
+                                class="experience__link"> digitalteacher.online</a> with CMS Wordpress.
+                        </p>
+                        <a href="https://digitalteacher.online/" class="img__link" target="blank"><img src="DT.png"
+                                alt="digitalteacher.online" class="experiance__img"></a>
+                    </section>
+                </div>
+                <div class="white-container">
+                    <section class="block-mycode" id="mycode">
+                        <h3 class="block__title">
+                            EXAMPLE OF MY CODE
+                        </h3>
+                        <p class="block__text">
+                            My solution kata "Sudoku Solver":
+                        </p>
+                        <pre><code class="js">
+function sudoku(matrix) {
+    const cell = [];
+    let doneMatrix;
+    function empty(matrix) {
+        for (let i = 0; i < 9; i++) {
+            for (let j = 0; j < 9; j++) {
+                if (matrix[i][j] == 0) {
+                    cell[0] = i;
+                    cell[1] = j;
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    function solMatrix(matrix) {
+        let i = 0,
+            j = 0;
+        if (empty(matrix)) {
+            i = cell[0];
+            j = cell[1];
+            for (let n = 1; n < 10; n++) {
+                if (checkRow(n, i, matrix) && checkColumn(n, j, matrix) && checkBox(n, i, j, matrix)) {
+                    matrix[i][j] = n;
+                    if (solMatrix(matrix)) {
+                        doneMatrix = matrix;
+                        return true;
+                    }
+                    matrix[i][j] = 0;
+                }
+            }
+            return false;
+        }
+        return true;
+    }
+    function checkRow(n, r, matrix) {
+        for (let i = 0; i < 9; i++) {
+            if (matrix[r][i] == n) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function checkColumn(n, c, matrix) {
+        for (let i = 0; i < 9; i++) {
+            if (matrix[i][c] == n) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function checkBox(n, r, c, matrix) {
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                if (matrix[Math.floor(r / 3) * 3 + i][Math.floor(c / 3) * 3 + j] == n) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    solMatrix(matrix);
+    return doneMatrix;
+}
+                        </code> </pre>
+                    </section>
+                </div>
+                <div class="white-container">
+                    <section class="block-education" id="education">
                         <h3 class="block__title">
                             EDUCATION
                         </h3>
+                        <h4 class="block__ab">
+                            Higher education
+                        </h4>
                         <p class="block__text">
-                            Volgograd State Techical University
+                            <span class="block__text_b">University:</span> Volgograd State Techical University <br>
+                            <span class="block__text_b">Faculty:</span> Electronics and computer technology <br>
+                            <span class="block__text_b">Speciality:</span> Informatics and computer engineering <br>
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <div class="container">
-        <div class="black-container--background"></div>
-        <div class="white-container--background"></div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="black-container">
-                    <p class="footer__text"> Russia, Volgograd <time datetime="2021-07-07">2021</time></p>
-                </div>
-                <div class="white-container">
-                    <a href="https://github.com/MaximFed91" class="footer__link"><img src="GitHub_Logo.png" alt="GitHub" class="img__git"></a>
-                    <a href="https://rs.school/js/"  class="footer__link"><img src="https://rs.school/images/rs_school_js.svg" alt="RS School" class="img__rss"> </a>
+                        <h4 class="block__ab">
+                            Online learning
+                        </h4>
+                        <p class="block__text">
+                            <span class="block__text_b">RS.School:</span> <a class="block__text__link"
+                                href="https://app.rs.school/certificate/hcpu0tdz">JS/FE Pre-School</a> <br>
+                        </p>
+                    </section>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="black-container">
+                        <p class="footer__text"> Russia, Volgograd <time datetime="2021-07-07">2021</time></p>
+                    </div>
+                    <div class="white-container">
+                        <a href="https://github.com/MaximFed91" class="footer__link"><img src="GitHub_Logo.png"
+                                alt="GitHub" class="img__git"></a>
+                        <a href="https://rs.school/js/" class="footer__link"><img
+                                src="https://rs.school/images/rs_school_js.svg" alt="RS School" class="img__rss"> </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
