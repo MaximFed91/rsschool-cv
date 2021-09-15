@@ -101,9 +101,9 @@ body {
 .btn__menu{
     flex-direction: column;
     border: none;
-    margin: 50px 10px 0 20px;
+    margin: 50px 15px 0 20px;
     display: none;
-    background-color:#ececee;
+    background-color:transparent;
 }
 .btn__menu > span{
     width: 35px;
@@ -222,7 +222,7 @@ body {
 
 @media(max-width:1240px) {
     .black-container {
-        padding: 0 50px 0 45px;
+        padding: 0 45px 0 45px;
     }
     .white-container {
         padding: 0 45px 0 45px;
@@ -245,7 +245,7 @@ body {
         transform: translateY(-500px);
     }
     .menu--open{
-        transform: translateY(0px);
+        transform: translateY(30px);
     }
     .menu__list{
         flex-direction: column;
@@ -287,6 +287,18 @@ body {
         display: flex;
         flex-direction:column;
     }
+    .header__inner{
+        height: 100px;
+        flex-wrap: wrap;
+    }
+    .header__img {
+        width: 250px;
+        height: 100px;
+        padding-right: 0;
+    }
+    .header__text{
+        padding-right: 0;
+    }
     .position {
         margin-top: 0px;
         padding-top: 0px;
@@ -295,10 +307,75 @@ body {
     }
     .aside{
         margin-top: 50px;
-        padding-top: 270px;
+        padding-top: 255px;
     }
     .main{
         padding-bottom: 130px;
+        padding-top: 20px;
+    }
+    .img__git, .img__rss  {
+        height: 27px;
+        margin-top: 10px;
     }
     
+    .img{
+        width: 150px;
+        height: 150px;
+       
+    }
+    .name__title{
+        font-size: 22px;
+        margin-top: 25px;
+        line-height: 34px;
+    }
+    .name__prof{
+        display: none;
+    }
+    .block__title{
+        font-size: 16px;
+    }
+    .block__ab{
+        font-size: 14px;
+    }
+    body{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .footer__inner{
+        height: 100px;
+    }
+    .footer__container{
+        padding: 0 0 0 45px;
+    }
+    .footer__container + .footer__container {
+        padding: 0 0 0 25px;
+    }
+    .btn__menu{
+        margin-top: 30px;
+    }
+    .btn__menu > span{
+        width: 25px;
+        height: 2px;
+        margin: 3px 0;
+    }
+}
+@media(max-width:597px){
+    .menu--open{
+        transform: translateY(-80px);
+    }
+    .header__text{
+        order: 3;
+    }
+    .name__title{
+        color: #f9f9f9;
+        margin-top: 10px;
+    }
+}
+@media(max-width:350px){
+    .black-container, .white-container {
+        padding: 0 25px ;
+    }
+    .btn__menu{
+        margin-left: -10px;
+    }
 }
