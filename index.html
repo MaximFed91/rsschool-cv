@@ -96,7 +96,7 @@
                                 SUMMARY
                             </h3>
                             <p class="block__text">
-                                An ACS engineer who decided to change his profession for developer.
+                                My current occupation is ACS engineer. I got a university degree in IT but under the circumstances I started my career in another field. By the time I turned 30 I realized that programing is really appealing to me. So I made a decision to switch my career. I began to study web-development in practice and developed a website on CMS Wordpress. Then I decided to deepen my knowledge in JS. Hopefully next year I will be experienced enough to find a new job.
                             </p>
                         </section>
                     </div>
@@ -142,8 +142,8 @@ function sudoku(matrix) {
     const cell = [];
     let doneMatrix;
     function empty(matrix) {
-        for (let i = 0; i < 9; i++) {
-            for (let j = 0; j < 9; j++) {
+        for (let i = 0; i &lt; 9; i++) {
+            for (let j = 0; j &lt; 9; j++) {
                 if (matrix[i][j] == 0) {
                     cell[0] = i;
                     cell[1] = j;
@@ -159,7 +159,7 @@ function sudoku(matrix) {
         if (empty(matrix)) {
             i = cell[0];
             j = cell[1];
-            for (let n = 1; n < 10; n++) {
+            for (let n = 1; n &lt; 10; n++) {
                 if (checkRow(n, i, matrix) && checkColumn(n, j, matrix) && checkBox(n, i, j, matrix)) {
                     matrix[i][j] = n;
                     if (solMatrix(matrix)) {
@@ -174,7 +174,7 @@ function sudoku(matrix) {
         return true;
     }
     function checkRow(n, r, matrix) {
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i &lt; 9; i++) {
             if (matrix[r][i] == n) {
                 return false;
             }
@@ -182,7 +182,7 @@ function sudoku(matrix) {
         return true;
     }
     function checkColumn(n, c, matrix) {
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i &lt; 9; i++) {
             if (matrix[i][c] == n) {
                 return false;
             }
@@ -190,8 +190,8 @@ function sudoku(matrix) {
         return true;
     }
     function checkBox(n, r, c, matrix) {
-        for (let i = 0; i < 3; i++) {
-            for (let j = 0; j < 3; j++) {
+        for (let i = 0; i &lt; 3; i++) {
+            for (let j = 0; j &lt; 3; j++) {
                 if (matrix[Math.floor(r / 3) * 3 + i][Math.floor(c / 3) * 3 + j] == n) {
                     return false;
                 }
@@ -230,25 +230,26 @@ function sudoku(matrix) {
                 </div>
             </div>
         </div>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="footer__inner">
-                        <div class="black-container footer__container">
-                            <p class="footer__text"> Russia, Volgograd <time datetime="2021-07-07">2021</time></p>
-                        </div>
-                        <div class="white-container footer__container">
-                            <a href="https://github.com/MaximFed91" class="footer__link"><img src="GitHub_Logo.png"
-                                    alt="GitHub" class="img__git"></a>
-                            <a href="https://rs.school/js/" class="footer__link"><img
-                                    src="https://rs.school/images/rs_school_js.svg" alt="RS School" class="img__rss">
-                            </a>
-                        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper">
+                <div class="footer__inner">
+                    <div class="black-container footer__container">
+                        <p class="footer__text"> Russia, Volgograd <time datetime="2021-07-07">2021</time></p>
+                    </div>
+                    <div class="white-container footer__container">
+                        <a href="https://github.com/MaximFed91" class="footer__link"><img src="GitHub_Logo.png"
+                                alt="GitHub" class="img__git"></a>
+                        <a href="https://rs.school/js/" class="footer__link"><img
+                                src="https://rs.school/images/rs_school_js.svg" alt="RS School" class="img__rss">
+                        </a>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

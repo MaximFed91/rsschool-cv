@@ -290,6 +290,7 @@ body {
     .header__inner{
         height: 100px;
         flex-wrap: wrap;
+        margin-top: 70px;
     }
     .header__img {
         width: 250px;
@@ -306,7 +307,7 @@ body {
         width: 100%;
     }
     .aside{
-        margin-top: 50px;
+        margin-top: 20px;
         padding-top: 255px;
     }
     .main{
